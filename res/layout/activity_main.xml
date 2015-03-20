@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+    <!-- 通信を開始 btn1: Good, btn0: Bad -->
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:padding="2dp"
+        android:text="@string/btn_label1"
+        android:textSize="22dp" >
+    </Button>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:padding="2dp"
+        android:text="@string/btn_label0"
+        android:textSize="22dp" >
+    </Button>
+
+    <!-- 通信の結果を表示 -->
+
+    <!-- TextView
+        android:id="@+id/tv1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:text="@string/temp_text"
+        android:textSize="15dp" / -->
+
+</LinearLayout>

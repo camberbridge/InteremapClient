@@ -1,0 +1,131 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:126), pid=4804, tid=6368
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version:  (8.0_20-b26) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.20-b23 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000263e000):  JavaThread "Unknown thread" [_thread_in_vm, id=6368, stack(0x0000000002960000,0x0000000002a60000)]
+
+Stack: [0x0000000002960000,0x0000000002a60000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x3152fa]
+V  [jvm.dll+0x265d03]
+V  [jvm.dll+0x266943]
+V  [jvm.dll+0x25e1e6]
+V  [jvm.dll+0x5e64c]
+V  [jvm.dll+0x5e743]
+V  [jvm.dll+0x7316a]
+V  [jvm.dll+0x734c8]
+V  [jvm.dll+0xe3937]
+V  [jvm.dll+0xe3cc6]
+V  [jvm.dll+0x1f89d7]
+V  [jvm.dll+0x229fc4]
+V  [jvm.dll+0x14c6f1]
+C  [javaw.exe+0x20c6]
+C  [javaw.exe+0xc9eb]
+C  [javaw.exe+0xca7f]
+C  [kernel32.dll+0x159ed]
+C  [ntdll.dll+0x2c541]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000000000263e000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=6368, stack(0x0000000002960000,0x0000000002a60000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.922 loading class java/lang/CharSequence done
+Event: 0.923 loading class java/lang/String done
+Event: 0.923 loading class java/lang/Class
+Event: 0.924 loading class java/lang/reflect/AnnotatedElement
+Event: 0.924 loading class java/lang/reflect/AnnotatedElement done
+Event: 0.924 loading class java/lang/reflect/GenericDeclaration
+Event: 0.924 loading class java/lang/reflect/GenericDeclaration done
+Event: 0.924 loading class java/lang/reflect/Type
+Event: 0.924 loading class java/lang/reflect/Type done
+Event: 0.924 loading class java/lang/Class done
+
+
+Dynamic libraries:
+0x000000013f300000 - 0x000000013f334000 	C:\User\pleiades\java\8\bin\javaw.exe
+0x0000000076eb0000 - 0x0000000077059000 	C:\Windows\SYSTEM32\ntdll.dll
+0x0000000076d90000 - 0x0000000076eaf000 	C:\Windows\system32\kernel32.dll
+0x000007fefd670000 - 0x000007fefd6dc000 	C:\Windows\system32\KERNELBASE.dll
+0x000007fefec50000 - 0x000007fefed2b000 	C:\Windows\system32\ADVAPI32.dll
+0x000007fefd6e0000 - 0x000007fefd77f000 	C:\Windows\system32\msvcrt.dll
+0x000007fefec30000 - 0x000007fefec4f000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007fefe6c0000 - 0x000007fefe7ed000 	C:\Windows\system32\RPCRT4.dll
+0x00000000767b0000 - 0x00000000768aa000 	C:\Windows\system32\USER32.dll
+0x000007fefe880000 - 0x000007fefe8e7000 	C:\Windows\system32\GDI32.dll
+0x000007fefe870000 - 0x000007fefe87e000 	C:\Windows\system32\LPK.dll
+0x000007fefe510000 - 0x000007fefe5d9000 	C:\Windows\system32\USP10.dll
+0x000007fefbda0000 - 0x000007fefbf94000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_fa396087175ac9ac\COMCTL32.dll
+0x000007fefeb50000 - 0x000007fefebc1000 	C:\Windows\system32\SHLWAPI.dll
+0x000007fefedd0000 - 0x000007fefedfe000 	C:\Windows\system32\IMM32.DLL
+0x000007feff010000 - 0x000007feff119000 	C:\Windows\system32\MSCTF.dll
+0x000000006b8c0000 - 0x000000006b992000 	C:\User\pleiades\java\8\bin\msvcr100.dll
+0x00000000648f0000 - 0x0000000065148000 	C:\User\pleiades\java\8\bin\server\jvm.dll
+0x000007fef8690000 - 0x000007fef8699000 	C:\Windows\system32\WSOCK32.dll
+0x000007fefe820000 - 0x000007fefe86d000 	C:\Windows\system32\WS2_32.dll
+0x000007fefe810000 - 0x000007fefe818000 	C:\Windows\system32\NSI.dll
+0x000007fefb300000 - 0x000007fefb33b000 	C:\Windows\system32\WINMM.dll
+0x0000000077070000 - 0x0000000077077000 	C:\Windows\system32\PSAPI.DLL
+0x00000000732a0000 - 0x00000000732af000 	C:\User\pleiades\java\8\bin\verify.dll
+0x000000006b890000 - 0x000000006b8b8000 	C:\User\pleiades\java\8\bin\java.dll
+0x0000000073280000 - 0x0000000073296000 	C:\User\pleiades\java\8\bin\zip.dll
+0x000007fef9060000 - 0x000007fef9185000 	C:\Windows\system32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 -Xbootclasspath:C:\Users\usr0101956\android-sdks\platforms\android-21\android.jar 
+java_command: com.example.hello.HttpPostConnect
+java_class_path (initial): C:\User\pleiades\workspace\Hello\bin\classes;C:\android-sdk-windows\extras\android\support\v7\appcompat\libs\android-support-v4.jar;C:\android-sdk-windows\extras\android\support\v7\appcompat\libs\android-support-v7-appcompat.jar;C:\android-sdk-windows\extras\android\support\v7\appcompat\bin\android-support-v7-appcompat.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.8.0_31
+PATH=C:/User/pleiades/eclipse/jre/bin/server;C:/User/pleiades/eclipse/jre/bin;C:/User/pleiades/eclipse/jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_31\bin;C:\ProgramData\Oracle\Java\javapath;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\android-sdk_r24.0.2-windows\android-sdk-windows\platforms;C:\android-sdk_r24.0.2-windows\android-sdk-windows\tools;C:\android-sdk-windows\tools;C:\android-sdk-windows\platforms;;C:\User\pleiades\eclipse;
+USERNAME=usr0101956
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 4 (4 cores per cpu, 1 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, clmul, erms, tsc, tscinvbit, tscinv
+
+Memory: 4k page, physical 4065324k(1027188k free), swap 8128784k(2994228k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.20-b23) for windows-amd64 JRE (1.8.0_20-b26), built on Jul 30 2014 13:51:23 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Mon Feb 23 10:31:56 2015
+elapsed time: 1 seconds (0d 0h 0m 1s)
+

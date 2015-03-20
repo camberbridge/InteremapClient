@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Intere Map</string>
+    <string name="hello_world">Hello world!!!!!! 20150220</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_label1">Good</string>
+    <string name="btn_label0">Bad</string>
+
+</resources>
